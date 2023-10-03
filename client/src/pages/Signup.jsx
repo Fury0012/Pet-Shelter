@@ -38,7 +38,7 @@ const handleSubmit = async (e) => {
         {
         ...inputValue,
         },
-        console.log(token, process.env.TOKEN_KEY),
+        console.log(process.env.TOKEN_KEY),
         { withCredentials: true }
     );
     const { success, message } = data;
