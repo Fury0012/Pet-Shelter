@@ -24,7 +24,7 @@ const UpdatePet = () => {
                 setSkill1(petData.Skill1 || "");
                 setSkill2(petData.Skill2 || "");
                 setSkill3(petData.Skill3 || "");
-                console.log(PetName);
+
             })
             .catch(error => {
                 console.error("Error fetching pet data:", error);
