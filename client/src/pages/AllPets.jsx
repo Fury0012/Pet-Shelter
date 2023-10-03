@@ -15,7 +15,7 @@ useEffect(() => {
             navigate("/login");
         }
         const { data } = await axios.post(
-            "https://pet-shelter-backend-9vfu.onrender.com",
+            "https://pet-shelter-backend-9vfu.onrender.com/login",
             {},
             { withCredentials: true }
         );
