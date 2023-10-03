@@ -11,6 +11,6 @@ module.exports.createSecretToken = (id) => {
   // Use the secret key from the environment variable TOKEN_KEY
   // Set an expiration time for the token (e.g., 3 days)
 return jwt.sign({ id }, process.env.TOKEN_KEY, {
-    expiresIn: 3, // 3 days in seconds
+    expiresIn: 3 * 24 * 60 * 60, // 3 days in seconds
 });
 };
