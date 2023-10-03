@@ -15,7 +15,7 @@ const UpdatePet = () => {
 
     useEffect(() => {
 
-        axios.get(`https://pet-shelter-backend-9vfu.onrender.com/pets/${id}`)
+        axios.get(`http://localhost:5000pets/${id}`)
             .then(res => {
                 const petData = res.data; 
                 setPetName(petData.PetName);
@@ -43,7 +43,7 @@ const UpdatePet = () => {
             Skill3,
         };
 
-        axios.put(`https://pet-shelter-backend-9vfu.onrender.com/pets/${id}`, Data)
+        axios.put(`http://localhost:5000/pets/${id}`, Data)
             .then(res => {
                 navigate("/");
             })
