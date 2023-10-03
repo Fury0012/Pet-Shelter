@@ -10,7 +10,7 @@ const navigate = useNavigate();
 
 const deletePet = () => {
     axios
-    .delete(`http://localhost:5000/pets/${id}`)
+    .delete(`https://pet-shelter-backend-9vfu.onrender.com:5000/pets/${id}`)
     .then((response) => {
         if (response.status === 200) {
         const updatedOnePet = { ...onePet };
@@ -28,7 +28,7 @@ const deletePet = () => {
 
 useEffect(() => {
     axios
-    .get(`http://localhost:5000/pets/${id}`)
+    .get(`https://pet-shelter-backend-9vfu.onrender.com:5000/pets/${id}`)
     .then((res) => {
         console.log(res);
         console.log(res.data);

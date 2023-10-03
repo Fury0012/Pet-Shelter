@@ -15,7 +15,7 @@
                 navigate("/login");
             }
             const { data } = await axios.post(
-                "http://localhost:5000",
+                "https://pet-shelter-backend-9vfu.onrender.com:5000",
                 {},
                 { withCredentials: true }
             );
@@ -40,7 +40,7 @@
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("http://localhost:5000/pets");
+                const response = await axios.get("https://pet-shelter-backend-9vfu.onrender.com:5000/pets");
                 setAllPets(response.data);
             } catch (err) {
                 console.error(err);
