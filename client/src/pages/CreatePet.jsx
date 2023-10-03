@@ -31,7 +31,7 @@ const CreatePet = () => {
             Skill3,
         };
 
-        axios.post("https://pet-shelter-backend-9vfu.onrender.com:5000/pets", Data)
+        axios.post("https://pet-shelter-backend-9vfu.onrender.com/pets", Data)
         .then(res => {
             navigate("/");
         });
