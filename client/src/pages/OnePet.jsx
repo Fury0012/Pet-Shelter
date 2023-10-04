@@ -50,15 +50,16 @@ return (
     <br /> <br />
     <button
             onClick={() => deletePet()}
-            style={{
-            float: "right",
-            border: "1px solid black",
-            backgroundColor: "red",
-            boxShadow: "2px 2px 2px black",
-            width: "200px",
-            height: "30px",
-            marginTop: "10px",
-            }}
+            id='adopt'
+            // style={{
+            // float: "right",
+            // border: "1px solid black",
+            // backgroundColor: "red",
+            // boxShadow: "2px 2px 2px black",
+            // width: "200px",
+            // height: "30px",
+            // marginTop: "10px",
+            // }}
         >
             <i class="bi bi-house"></i> Adopt {onePet.PetName}
         </button>

@@ -87,7 +87,7 @@ const UpdatePet = () => {
         </div>
     </div>
     <div style={{ width: "20%", display: "flex", alignItems: "flex-end" }}>
-        <button style={{ border: "1px solid black", backgroundColor: "blue", boxShadow: "2px 2px 2px black", width: "120px", height: "40px", color: "white" }}>
+        <button id="update-pet">
         <i className="bi bi-box-arrow-down"></i> Add Pet
         </button>
     </div>
